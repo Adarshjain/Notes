@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Notes</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="masonry.min.js"></script>
+	<script src="masonry-font.js"></script>
+	<script src="backend.js"></script>
+</head>
+<body>
+	<div class="top">
+		<span class="titletxt">Notes</span>
+	</div>
+	
+	<div id="grid">
+		<!-- <div class="grid-item">
+			<span class="notes-title">Title</span>
+			<span class="notes">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer tooky with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</span>
+			<div class="time"><i>Title</i></div>
+		</div> -->
+	</div>
+	<div class="add" id="addnotes">
+		<i class="material-icons addico">add</i>
+	</div>
+	<div id="dialog">
+		<div id="container">
+			<div class="edit-tit" id="edit-tit"></div>
+			<input class="edit-title" id="edit" placeholder="Title">
+			<textarea name="textarea" class="txtarea" id="notesarea" placeholder="Add Notes"></textarea><br/>
+			<div class="edit-time" id="timet"></div>
+			<div class="btn-cont">
+				<button class="btn" id="save">Save</button>
+				<button class="cancel btn">Cancel</button>
+			</div>
+			<span class="close"><i class="material-icons">close</i></span>
+		</div>
+	</div>
+</body>
+</html>
